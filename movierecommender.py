@@ -15,7 +15,7 @@ template = PromptTemplate(
     template="Based on your preferences, here are some movie recommendations for {user_input}:\n") 
 
 # Initialize LLM Chain with Gemini Pro
-llm=ChatGoogleGenerativeAI(model="gemini-pro", google_api_key="AIzaSyBxBQ_GoFt7dbY1uReLso-8U9mDctobOwo")
+llm=ChatGoogleGenerativeAI(model="gemini-pro")
 
 # Generate Recommendations if user input provided
 if user_input:
